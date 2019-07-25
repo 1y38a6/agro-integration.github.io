@@ -1,0 +1,168 @@
+.container{
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 0;
+}
+
+.container-p120{
+    padding: 0 120px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0;
+    justify-content: center;
+}
+
+.row-c{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-l{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0;
+    justify-content: left;
+}
+
+.item{
+    padding: 0 0;
+    text-align: center;
+    margin: 16px 16px; 
+    box-sizing: border-box;
+}
+
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.c6>img{
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .c15{
+        width: calc(30% - 32px);
+        margin: 1vh 5vw;
+    }
+
+    .c12{
+        width: calc(10% - 32px);
+    }
+
+    .c9{
+        width: calc(100% - 32px);
+    }
+
+    .c6{
+        width: calc(100% - 32px);
+    }
+
+    .c4{
+        width: calc(100% - 32px);
+    }
+
+    .item{
+        padding: 0;
+    }
+
+    .pc{
+        display: none;
+    }
+
+    .container{
+        padding: 0 5vw;
+    }
+
+    .row{
+        margin: 0;
+    }
+}
+
+.inline{
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+     
+@media screen and (min-width: 768px) {
+    .c15{
+        width: calc(100% / 60 * 6 - 32px);
+        margin: 0 32px;
+    }
+
+    .c12{
+        width: calc(100% / 18 * 6 - 32px);
+    }
+
+    .c9{
+        margin: 12px 8px;
+        width: calc(100% / 8 * 4 - 32px);
+    }
+
+    .c6{
+        width: calc(100% / 6 * 6 - 32px);
+    }
+
+    .c4{
+        width: calc(100% / 6 * 3 - 32px);
+    }
+
+    .c2{
+        width: calc(100% / 4 * 6 - 32px);
+    }
+
+    .mb{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .c15{
+        width: calc(100% / 60 * 6 - 32px);
+        margin: 0 32px;
+    }
+
+    .c12{
+        width: calc(100% / 18 * 3 - 32px);
+    }
+
+    .c9{
+        width: calc(100% / 8 * 4 - 32px);
+    }
+
+    .c6{
+        width: calc(100% / 9 * 4);
+    }
+    
+    .row{
+        justify-content: center;
+    }
+
+    .c4{
+        width: calc(100% / 8 * 2);
+    }
+
+    .c2{
+        width: calc(100%);
+    }
+}
+
+@media screen and (min-width: 1920px){
+    .c6{
+        width: calc(100% / 6 * 3);
+    }
+
+    .c2{
+        width: calc(100% / 9 * 3);
+    }
+}
