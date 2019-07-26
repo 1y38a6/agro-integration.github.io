@@ -21,6 +21,18 @@
 
 body{
     font-family: 'Roboto Regular', Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+h1{
+    font-family: 'Roboto Bold';
+    font-style: normal;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 40px;
+
+    color: #1C1C1C;
 }
 
 h2{
@@ -59,7 +71,18 @@ h4{
     padding-bottom: 38px;
 }
 
-.scheme-point{
+.bottom-form{
+    padding-top: 110px;
+    background: #ffffff;
+    padding-bottom: 111px;
+}
+
+ol{
+    counter-reset: myCounter;
+}
+
+li{
+    list-style: none;
     margin-top: 20px;
 
     font-family: 'Roboto Regular';
@@ -71,7 +94,9 @@ h4{
     color: #171717;
 }
 
-.scheme-point-before{
+li:before {
+    counter-increment: myCounter;
+    content:counter(myCounter);
     font-family: 'Roboto Regular';
     font-style: normal;
     font-weight: 500;
@@ -80,16 +105,11 @@ h4{
     line-height: 16px;
 
     color: #B8D26C;
+    display: inline-block;
 }
 
 .right-align-text{
     text-align: right;
-}
-
-.input-over{
-    width: fit-content;
-    margin-left: auto;
-    margin-right: 0;
 }
 
 input[type="text"]:first-of-type{
@@ -108,6 +128,20 @@ input[type="text"], input[type="tel"], input[type="email"]{
     padding: 11px 20px 13px;
 
     color: #171717;
+}
+
+form{
+    display: grid;
+    justify-content: end;
+}
+
+img{
+    display: block;
+}
+
+input{
+    display: block;
+    margin-left: auto;
 }
 
 input[type="submit"]{
@@ -169,10 +203,6 @@ input::placeholder{
 
 .about-first{
     padding: 40px 0;
-}
-
-.about-inblock{
-    padding: 20px 16%;
 }
 
 .about-first:first-child, .about-first:last-child{
@@ -239,4 +269,125 @@ input::placeholder{
 
 .img6{
     background: url(../img/Farm.jpg);
+}
+
+.first-block{
+    position: relative;
+    background-image: url(../img/Foto.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 54px;
+    padding-bottom: 120px;
+}
+
+.color-correction{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    opacity: 0.3;
+}
+
+.first-block-text{
+    font-family: 'Roboto medium';
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+
+    color: #1E1E1E;
+}
+
+.addon-container{
+    display: grid;
+    justify-content: center;
+}
+
+.addon-container>h2, .addon-container>p{
+    max-width: 750px;
+}
+
+.first-block-icons{
+    padding-top: 100px;
+    display: grid;
+    justify-content: center;
+}
+
+.first-block-icons>div{
+    max-width: 900px;
+}
+
+.white-text{
+    color: white;
+}
+
+.why-we{
+    background: #F8F8F8;
+    padding: 70px 0px;
+}
+
+.why-we-title{
+    font-family: "Roboto Bold";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+
+    color: #171717;
+}
+
+.why-we-icons{
+    padding-top: 82px;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.about__box--reverse>.about-inblock{
+    margin-left: -webkit-calc(50% - 757.5px);
+    margin-left: calc(50% - 757.5px);
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 757.5px;
+    -ms-flex: 0 0 757.5px;
+    flex: 0 0 757.5px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+.about-inblock{
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    max-width: 757.5px;
+    margin-left: 0;
+    margin-right: calc(50% - 757.5px);
+    padding: 0;
+    display: flex;
+    padding: 30px 150px;
+    justify-content: start;
+}
+
+.about_inblock_content{
+    max-width: 404px;
+}
+
+.about__box{
+    display: flex;
+    margin: 0 0;
+}
+
+.about__box__img>img{
+    width: 100%;
+}
+
+.about__box__img{
+    display: grid;
+    align-items: center;
+    width: 50%;
 }
