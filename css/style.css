@@ -397,3 +397,7 @@ input::placeholder{
     color: #B8D26C;
     display: inline-block;
 }
+
+.about__box--reverse{
+    flex-direction: row-reverse;
+}
