@@ -216,6 +216,10 @@
     .why-we{
         background: #ffffff;
     }
+
+    .bottom-form{
+        padding-top: 0px;
+    }
 }
      
 @media screen and (min-width: 768px) {
