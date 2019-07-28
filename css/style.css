@@ -268,6 +268,10 @@ input::placeholder{
     padding: 5px 10px 6px 11px;
 }
 
+.first-block-icons>.row-l{
+    justify-content: left;
+}
+
 .about-big-img{
     background-position: center;
     background-size: cover !important;
